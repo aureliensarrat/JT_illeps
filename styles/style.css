@@ -5,7 +5,6 @@ html body{
 
 body{
   height: 100vh;
-  width: 100vw;
 }
 
 a{
@@ -66,8 +65,9 @@ header{
 /*MAIN*/
 
 main{
+  height: 80em;
+  width: 100%;
   background: #CBC5C4;
-  height: 80%;
 }
 
 main h1{
@@ -76,9 +76,9 @@ main h1{
 
 .maincontainer{
   height: 100%;
-  width: 90%;
+  width: 70%;
   border: 2px white solid;
-  margin: 0 auto;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -144,6 +144,8 @@ main h1{
 .section2_content{
   height: 100%;
   width: 60%;
+  display: flex;
+  flex-direction: column;
 }
 
 .section2_content_title{
@@ -156,4 +158,36 @@ main h1{
   height: 70%;
   width: 100%;
   background: green;
+}
+
+/*FOOTER*/
+
+footer{
+  height: 20%;
+  width: 100%;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.footercontainer{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logoileps{
+  margin-left: 40px;
+}
+
+.logoileps img{
+  height: 10%;
+  width: 10%;
+}
+
+.legalmention{
+  width: 100%;
 }
