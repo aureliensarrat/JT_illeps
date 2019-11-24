@@ -67,5 +67,93 @@ header{
 
 main{
   background: #CBC5C4;
-  height: 80%
+  height: 80%;
+}
+
+main h1{
+  text-align: center;
+}
+
+.maincontainer{
+  height: 100%;
+  width: 90%;
+  border: 2px white solid;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.presentation{
+  height: 20%;
+  width: 100%;
+  background: red;
+}
+
+/*Section1*/
+
+.section1{
+  height: 50%;
+  width: 100%;
+  background: blue;
+  display: flex;
+  flex-direction: row;
+}
+
+.section1_content{
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section1_content_title{
+  height: 30%;
+  width: 100%;
+  background: yellow;
+}
+
+.section1_content_text{
+  height: 70%;
+  width: 100%;
+  background: green;
+}
+
+.section1_video{
+  height: 100%;
+  width: 40%;
+  background: pink;
+}
+
+/*Section2*/
+
+.section2{
+  height: 50%;
+  width: 100%;
+  background: blue;
+  flex-direction: row;
+}
+
+.section2_video{
+  height: 100%;
+  width: 40%;
+  background: pink;
+}
+
+.section2_content{
+  height: 100%;
+  width: 60%;
+}
+
+.section2_content_title{
+  height: 30%;
+  width: 100%;
+  background: yellow;
+}
+
+.section2_content_text{
+  height: 70%;
+  width: 100%;
+  background: green;
 }
