@@ -1,0 +1,80 @@
+.cube-3d
+{
+    --size: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    perspective: 800px;
+}
+
+.cube-3d .y-axis{
+  animation-name: cube-rotation-y-axis;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes cube-rotation-y-axis {
+  0% { transform: rotateY(0deg);}
+  100% { transform: rotateY(360deg);}
+}
+
+.cube-3d .x-axis{
+  animation-name: cube-rotation-x-axis;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes cube-rotation-x-axis {
+  0% { transform: rotateX(0deg);}
+  100% { transform: rotateX(360deg);}
+}
+
+.cube-3d .face
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(var(--size) / -2);
+    left: calc(var(--size) / -2);
+    width: var(--size);
+    height: var(--size);
+    font-size: 50px;
+    border: 2px solid black;
+}
+
+.cube-3d *{
+  transform-style: preserve-3d;
+}
+
+.cube-3d .face-x-pos{
+  background: #008000;
+  transform: rotateY(90deg) translateZ(calc(var(--size)/2));    /* TranslateZ(200px) */
+}
+
+.cube-3d .face-x-neg{
+  background:	#0000FF;
+  transform: rotateY(-90deg) translateZ(calc(var(--size)/2));
+}
+
+.cube-3d .face-y-pos{
+  background: #FFFFFF;
+  transform: rotateX(90deg) translateZ(calc(var(--size)/2));
+}
+
+.cube-3d .face-y-neg{
+  background: #FF0000;
+  transform: rotateX(-90deg) translateZ(calc(var(--size)/2));
+}
+
+.cube-3d .face-z-pos{
+  background: #FFA500;
+  transform: rotateY(0) translateZ(calc(var(--size)/2));
+}
+
+.cube-3d .face-z-neg{
+  background: #FFFF00;
+  transform: rotateY(-180deg) translateZ(calc(var(--size)/2));
+}

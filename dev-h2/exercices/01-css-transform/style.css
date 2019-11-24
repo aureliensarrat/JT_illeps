@@ -1,0 +1,61 @@
+.container{
+  height: 200px;
+  margin: 20px;
+  padding: 20px;
+  background: #cccccc;
+  position: relative;
+  perspective: 800px;
+}
+
+.element{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: orange;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+}
+
+.container:hover .element-1{   /* Modifie la forme */
+  transform: scale(3,0.5);
+}
+
+.container:hover .element-2{   /* Modifie la position */
+  transform: translate(200px, 50px);
+}
+
+.container:hover .element-3{   /* Transforme le degré de position */
+  transform: rotate(1rad);
+}
+
+.container:hover .element-4{   /* Transforme "l'Axe" */
+  transform: skew(0, 45deg)
+}
+
+.container:hover .element-5{   /* Tourne le degré sur "l'Axe" */
+  transform-origin: 100% 100%;
+  transform: rotate(45deg);
+}
+
+.container:hover .element-6{   /* Combiner Position et Degré */
+  transform: translate(200px, 0) rotate(45deg);
+}
+
+.container:hover .element-7{   /* Transformation 3D */
+  transform: rotateY(45deg);
+}
+
+.container:hover .element-8{   /* Transformation 3D avec enfant */
+  transform: rotateX(70deg);
+}
+
+.element-8 .smaller{
+  width: 50%;
+  height: 50%;
+  background: red;
+  transform: translateZ(40px);
+}
+
+.container *{
+  transform-style: preserve-3d;
+}

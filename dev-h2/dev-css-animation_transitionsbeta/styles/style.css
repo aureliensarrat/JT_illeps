@@ -1,0 +1,172 @@
+html body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+}
+
+
+/* BORDER */
+
+
+.height.red{
+  height: 5%;
+  margin: 0;
+}
+
+.side.red{
+  width: 2%;
+  margin: 0;
+}
+
+.red{
+  background: red; /* #fe001a */
+}
+
+.middle-container{
+  display: flex;
+  justify-content: center;
+  height: 90%;
+}
+
+
+/* INTERACTION ZONE */
+
+
+.play-zone{
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a8a7a7; /*white*/
+}
+
+    /* Bottle */
+
+.bottle{
+  top: 35%;
+  left: 50%;
+  height: 26.5em;
+  width: 7.875em;
+  display: flex;
+  flex-direction: column;
+}
+        /* Bottle Top */
+
+.bottle-top{
+  height: 30%;
+}
+
+.bottle-cap{
+  height: 20%;
+  background: red;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.bottle-top-transition{
+  height: 25%;
+  background: red;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.bottle-curve{
+  display: flex;
+  flex-direction: row;
+  height: 60%;
+}
+
+.bottle-curve-left{
+  background: transparent;
+  border: 2px black solid;
+  width: 50%;
+  border-top-left-radius: 100%;
+}
+
+.bottle-curve-right{
+  background: transparent;
+  border: 2px black solid;
+  width: 50%;
+  border-top-right-radius: 100%;
+}
+
+        /* Bottle Main */
+
+.bottle-main{
+  height: 70%;
+}
+
+.bottle-full-start{
+  height: 10%;
+  background: black;
+}
+
+.bottle-label{
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  background: red;
+}
+
+.bottle-brand{
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+}
+
+.bottle-full-middle{
+  height: 10%;
+  background: pink;
+}
+
+.bottle-full-end{
+  height: 40%;
+  background: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottle-curve-middle-left{
+  width: 7%;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  background: #a8a7a7;
+}
+
+.bottle-curve-middle-center{
+  width: 86%;
+}
+
+.bottle-curve-middle-right{
+  width: 7%;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  background: #a8a7a7;
+}
+
+        /* Bottle Bottom */
+
+.bottle-bottom{
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottle-bottom-left{
+  width: 45%;
+  background: orange;
+}
+
+.bottle-bottom-middle{
+  width: 10%;
+  background: blue;
+}
+
+.bottle-bottom-right{
+  width: 45%;
+  background: brown;
+}
