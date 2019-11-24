@@ -1,0 +1,27 @@
+html body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+}
+
+header{
+  height: 10%;
+  width: 100%;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .logo_jt{
+  height: 90%;
+  width: 5%;
+}
+
+header .socialmedia img{
+  height: 90%;
+  width: 3%;
+}
