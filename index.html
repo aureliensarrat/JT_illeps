@@ -1,102 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html> <!-- Balise indiquant le type du document pour le navigateur, ici HTML pour le contenu brut de la page -->
+<html lang="en"> <!-- Balise ouvrant le html -->
+<head> <!-- Balise qui sert a donner des informations au navigateur -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JT-Ileps</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="styles/style.css">
+  <title>JT-Ileps</title> <!-- Balise pour le titre dans le navigateur -->
+  <link rel="icon" href="favicon.ico"> <!-- Balise pour l'icone a coté du titre -->
+  <link rel="stylesheet" href="styles/style.css"> <!-- Balise pour lier le style (css) -->
 </head>
-  <body>
-    <header>
-      <div class="headercontainer">
-        <img class="logo_jt" src="images/logojt.png" alt="Logo du JT"/>
-        <div class="menu">
-          <a class="acceuil" href="#">Accueil</a>
-          <a class="actualité" href="#">Actualités</a>
-          <a class="Contact" href="#">Contact</a>
+<body> <!-- Balise qui commence le contenu du document -->
+  <header> <!-- Balise block (comme une div) mais qui indique que c'est le haut de la page (généralement le menu) -->
+    <div class="headercontainer"> <!-- Balise placé la pour l'utiliser pour placer plus facilement les élements a l'intérieur (on appelle ça container) -->
+      <img class="logo_jt" src="images/logojt.png" alt="Logo du JT"/> <!-- Image du Logo -->
+      <div class="menu"> <!-- Regroupe les 3 liens du menu -->
+        <a class="acceuil" href="#">Accueil</a>
+        <a class="actualité" href="#">Actualités</a>
+        <a class="Contact" href="#">Contact</a>
+      </div>
+      <div class="recherche_bar">
+        <input class="bar" type="text" placeholder="Search.."/> <!-- Balise permettant de faire de l'intéractif, la valeur type:text permet de faire une zone de texte avec dedans le texte "Search" mit dedans de base-->
+      </div>
+      <div class="socialmedia"> <!-- Contenu des reseaux sociaux, ce sont des liens ou a l'intérieur il y a des images pour pouvoir cliquer dessus au lieu du texte -->
+        <a class="facebook" href="https://www.facebook.com/JT-Ileps-112511826876786/?modal=admin_todo_tour">
+          <img src="images/logofb.png" alt="Logo Facebook">
+        </a>
+        <a class="instagram" href="https://www.instagram.com/jtileps/?hl=fr">
+          <img src="images/logoin.png" alt="Logo Instagram">
+        </a>
+        <a class="twitter" href="https://twitter.com/IlepsJt">
+          <img src="images/logotw.png" alt="Logo Twitter">
+        </a>
+        <a class="youtube" href="https://www.youtube.com/channel/UCsmrUpi6V8zteM7NRZk2XMg">
+          <img src="images/logoyt.png" alt="Logo Youtube">
+        </a>
+      </div>
+    </div>
+  </header>
+  <main> <!-- Balise block (comme une div) mais qui indique que c'est le milieu de la page -->
+    <div class="maincontainer">
+      <h1>Premier JT sur L'Ileps</h1>
+      <div class="presentation">
+        <p> Entre actualités et conseils efficaces, le JTIleps est un nouveau programme créé par des étudiants et destiné aux étudiant de l’Ileps ! <br>
+          Il retracera de façon hebdomadaire toutes les faits importants ! Rappel des évènements à venir seront la principale activée du JT, on vous emmènera dans les coulisses de l’organisation de ces différentes manifestations ! <br>
+          Alors restez actif.ve et suivez-nous !!
+        </p>
+      </div>
+      <div class="section"> <!-- Contenu de vos articles divisé en deux parties, vidéo et contenu textuel -->
+        <div class="section_content"> <!-- Contenu textuel, dedans il y a titre et texte -->
+          <div class="section_content_title">
+            <h3>LE JT ILEPS !</h3>
+          </div>
+          <div class="section_content_text">
+            <p> Le JT Ileps est un nouveau format spécialement créé pour cette rentrée 2019-2020 à l’ILEPS.
+              Pour cette inauguration, vous retrouverez la présentation du nouveau bâtiment de l’IPSL, le bâtiment M qui regroupe des salles indispensables au bon déroulement de la vie étudiante.
+              Le bâtiment accueillant le lounge, le coworking, la cafétéria, l’espace restauration ainsi que la bibliothèque vous ferons vous demander comment vous avez pu vivre aussi longtemps sans lui. Dans ce programme, notre travail consiste à remarquer ce que les autres ne remarquent pas. En choisissant de vous intéresser aux actualités de l’école vous contribuer déjà grandement à son développement et nous espérons vivement que vous saurez apprécier ce format inédit à l’Ileps.
+              Maintenant reste à savoir si vous voulez faire des bonnes choses ou des grandes choses, la nuance est assez subtile mais nous savons que vous saurez faire la différence.
+            </p>
+          </div>
         </div>
-        <div class="recherche_bar">
-          <input class="bar" type="text" placeholder="Search.."/>
-        </div>
-        <div class="socialmedia">
-          <a class="facebook" href="https://www.facebook.com/JT-Ileps-112511826876786/?modal=admin_todo_tour">
-            <img src="images/logofb.png" alt="Logo Facebook">
-          </a>
-          <a class="instagram" href="https://www.instagram.com/jtileps/?hl=fr">
-            <img src="images/logoin.png" alt="Logo Instagram">
-          </a>
-          <a class="twitter" href="https://twitter.com/IlepsJt">
-            <img src="images/logotw.png" alt="Logo Twitter">
-          </a>
-          <a class="youtube" href="https://www.youtube.com/channel/UCsmrUpi6V8zteM7NRZk2XMg">
-            <img src="images/logoyt.png" alt="Logo Youtube">
-          </a>
+        <div class="section_video"> <!-- Vidéo -->
+          <video src="videos/film_jtileps.mp4" autoplay controls poster="images/logojt.png"></video> <!-- Balise vidéo pour intégrer la vidéo facilement avec 3 valeurs (regarder sur internet)-->
         </div>
       </div>
-    </header>
-    <main>
-      <div class="maincontainer">
-        <h1>Premier JT sur L'Ileps</h1>
-        <div class="presentation">
-          <p> Entre actualités et conseils efficaces, le JTIleps est un nouveau programme créé par des étudiants et destiné aux étudiant de l’Ileps ! <br>
-            Il retracera de façon hebdomadaire toutes les faits importants ! Rappel des évènements à venir seront la principale activée du JT, on vous emmènera dans les coulisses de l’organisation de ces différentes manifestations ! <br>
-            Alors restez actif.ve et suivez-nous !!
-          </p>
+      <div class="section"> <!-- La deuxieme section, tout pareil que la première sauf l'ordre (normal) -->
+        <div class="section_video">
+          <video src="videos/videomaradas.mp4" autoplay controls poster="images/logojt.png"></video>
         </div>
-        <div class="section">
-          <div class="section_content">
-            <div class="section_content_title">
-              <h3>LE JT ILEPS !</h3>
-            </div>
-            <div class="section_content_text">
-              <p> Le JT Ileps est un nouveau format spécialement créé pour cette rentrée 2019-2020 à l’ILEPS.
-                Pour cette inauguration, vous retrouverez la présentation du nouveau bâtiment de l’IPSL, le bâtiment M qui regroupe des salles indispensables au bon déroulement de la vie étudiante.
-                Le bâtiment accueillant le lounge, le coworking, la cafétéria, l’espace restauration ainsi que la bibliothèque vous ferons vous demander comment vous avez pu vivre aussi longtemps sans lui. Dans ce programme, notre travail consiste à remarquer ce que les autres ne remarquent pas. En choisissant de vous intéresser aux actualités de l’école vous contribuer déjà grandement à son développement et nous espérons vivement que vous saurez apprécier ce format inédit à l’Ileps.
-                Maintenant reste à savoir si vous voulez faire des bonnes choses ou des grandes choses, la nuance est assez subtile mais nous savons que vous saurez faire la différence.
-              </p>
-            </div>
+        <div class="section_content">
+          <div class="section_content_title">
+            <h3>LES MARADAS !</h3>
           </div>
-          <div class="section_video">
-            <video src="videos/film_jtileps.mp4" autoplay controls poster="images/logojt.png"></video>
+          <div class="section_content_text">
+            <p> Le complexe des Maradas accueille les étudiants de l’Ileps dans toutes leurs pratiques sportives dans des locaux impressionnants.
+              L’ILEPS y organise également des évènements au cours de l’année avec des tournois inter et intra promo.
+              C’est aussi le siège de manifestation sportive gérer par le Conseil des Étudiants de Cergy-Pontoise avec le « Campus Day » regroupant 13 écoles sur un tournoi multisport dans lequel la bonne humeur et le fair-play sont au rendez-vous.
+              La chose importante à retenir, c’est la motivation et l’envie d’aller de l’avant sans craindre l’échec car la défaite est le brouillard que dissipe parfois le triomphe.
+              N’attendez plus et venez découvrir les Maradas !
+              Venez découvrir l’Ileps ! Ne vous contentez pas d’attendre simplement que cela vous tombe dans la main et choisissez de donner un petit coup de pouce au destin.
+              On vous a souvent répété que les meilleures choses dans la vie ne sont pas toujours faciles à obtenir, cette fois-ci c’est du pain bénit, alors saisissez votre chance et rejoignez-nous.
+            </p>
           </div>
-        </div>
-        <div class="section">
-          <div class="section_video">
-            <video src="videos/videomaradas.mp4" autoplay controls poster="images/logojt.png"></video>
-          </div>
-          <div class="section_content">
-            <div class="section_content_title">
-              <h3>LES MARADAS !</h3>
-            </div>
-            <div class="section_content_text">
-              <p> Le complexe des Maradas accueille les étudiants de l’Ileps dans toutes leurs pratiques sportives dans des locaux impressionnants.
-                L’ILEPS y organise également des évènements au cours de l’année avec des tournois inter et intra promo.
-                C’est aussi le siège de manifestation sportive gérer par le Conseil des Étudiants de Cergy-Pontoise avec le « Campus Day » regroupant 13 écoles sur un tournoi multisport dans lequel la bonne humeur et le fair-play sont au rendez-vous.
-                La chose importante à retenir, c’est la motivation et l’envie d’aller de l’avant sans craindre l’échec car la défaite est le brouillard que dissipe parfois le triomphe.
-                N’attendez plus et venez découvrir les Maradas !
-                Venez découvrir l’Ileps ! Ne vous contentez pas d’attendre simplement que cela vous tombe dans la main et choisissez de donner un petit coup de pouce au destin.
-                On vous a souvent répété que les meilleures choses dans la vie ne sont pas toujours faciles à obtenir, cette fois-ci c’est du pain bénit, alors saisissez votre chance et rejoignez-nous.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="ileps-web">
-          <a class="ileps-link" href="http://ileps.fr/">Lien vers le site officiel de l’ILEPS</a>
         </div>
       </div>
-    </main>
-    <footer>
-      <div class="footercontainer">
-        <div class="logoileps">
-          <img src="images/logo.png" alt="Logo License 3"/>
-        </div>
-        <div class="legalmention">
-          <h4>Tout droit réservés à ILEPS Management - L3 WebMarketing</h4>
-        </div>
+      <div class="ileps-web"> <!-- Balise contenant le lien, elle sert a placer le lien plus facilement (comme un container un peu) -->
+        <a class="ileps-link" href="http://ileps.fr/">Lien vers le site officiel de l’ILEPS</a> <!-- Le lien avec cette fois du texte -->
       </div>
-    </footer>
-    <script type="scripts/script.js"></script>
-  </body>
+    </div>
+  </main>
+  <footer> <!-- Balise block (comme une div) mais qui indique que c'est le bas de la page (généralement les infos légales ect)-->
+    <div class="footercontainer">
+      <div class="logoileps"> <!-- Balise contenant le l'image, elle sert a placer le l'image plus facilement (comme un container un peu) -->
+        <img src="images/logo.png" alt="Logo License 3"/>
+      </div>
+      <div class="legalmention">
+        <h4>Tout droit réservés à ILEPS Management - L3 WebMarketing</h4>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>

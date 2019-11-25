@@ -1,3 +1,8 @@
+/*CSS : Cascading style sheets, sert a placer, styliser et même animer des élements du HTML*/
+
+     /*GENERAL SETUP (Tout ce qui concerne toute la page ou alors des Setups de bases)*/
+
+/*Font face: Pour intégrer les polices (les importes mais ne les appliques pas encore)*/
 @font-face {
   font-family: 'Trattatello';
   src: url('../fonts/Trattatello.ttf');
@@ -12,7 +17,7 @@
   font-style: normal;
 }
 
-html body{
+html body{  /*Remet a 0 tout ce que le navigateur peut appliquer de base comme des marges qui pollue le rendu ect (on applique sur le body et sur le html)*/
   margin: 0;
   padding: 0;
 }
@@ -21,58 +26,58 @@ body{
   height: 100vh;
 }
 
-a{
-  text-decoration: none;
-  color: white;
-  font-family: 'Trattatello', sans-serif;
-  font-size: 1.5em;
+a{ /*Sur tout les liens*/
+  text-decoration: none; /*enlever le "soulignement" qui est sur les liens de base*/
+  color: white; /*Couleur du texte*/
+  font-family: 'Trattatello', sans-serif; /*Applique la police (sur les liens du coup)*/
+  font-size: 1.5em; /*Change la taille du texte*/
 }
 
 h1{
-  font-size: 4em;
+  font-size: 4em; /*Change la taille du texte*/
 }
 
 h3{
-  font-size: 2.5em;
-  text-align: center;
+  font-size: 2.5em; /*Change la taille du texte*/
+  text-align: center; /*Centre le texte*/
 }
 
 h3, h1{
-  color: #2A3D67;
-  font-family: 'Trattatello', sans-serif;
+  color: #2A3D67; /*Couleur du texte*/
+  font-family: 'Trattatello', sans-serif; /*Applique la police (sur les liens du coup)*/
 }
 
 p{
-  font-size: 1em;
-  font-family: 'Calibri', sans-serif;
-  margin: 1.5em;
+  font-size: 1em; /*Change la taille du texte*/
+  font-family: 'Calibri', sans-serif; /*Applique la police (sur les liens du coup)*/
+  margin: 1.5em; /*Applique une marge*/
 }
 
 /*HEADER*/
 
 header{
-  background: black;
-  color: white;
+  background: black; /*Couleur du fond*/
+  color: white; /*Couleur du texte*/
 }
 
 .headercontainer{
-  height: 10vh;
-  width: 100%;
+  height: 10vh; /*Définie la hauteur*/
+  width: 100%; /*Définie la largeur*/
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .logo_jt{
-  width: 4%;
+  width: 4%; /*Définie la largeur*/
 }
 
 .menu{
-  width: 40%;
+  width: 40%; /*Définie la largeur*/
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 3vh;
+  font-size: 3vh; /*Change la taille du texte*/
 }
 
 .recherche_bar{
@@ -90,20 +95,20 @@ header{
 }
 
 .socialmedia{
-  height: 65%;
-  width: 15%;
+  height: 65%; /*Définie la hauteur*/
+  width: 15%; /*Définie la largeur*/
 }
 
 .socialmedia img{
-  width: 3vw;
+  width: 3vw; /*Définie la largeur*/
 }
 
 /*MAIN*/
 
 main{
-  height: 80em;
-  width: 100%;
-  background: #CBC5C4;
+  height: 80em; /*Définie la hauteur*/
+  width: 100%; /*Définie la largeur*/
+  background: #CBC5C4; /*Couleur du fond*/
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -115,8 +120,8 @@ main h1{
 }
 
 .maincontainer{
-  height: 105%;
-  width: 70%;
+  height: 105%; /*Définie la hauteur*/
+  width: 70%; /*Définie la largeur*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -124,8 +129,8 @@ main h1{
 }
 
 .presentation{
-  height: 20%;
-  width: 100%;
+  height: 20%; /*Définie la hauteur*/
+  width: 100%; /*Définie la largeur*/
   border: 2px black solid;
   border-radius: 20px;
 }
@@ -133,81 +138,81 @@ main h1{
 /*Section1*/
 
 .section{
-  height: 80%;
-  width: 100%;
+  height: 80%; /*Définie la hauteur*/
+  width: 100%; /*Définie la largeur*/
   display: flex;
   flex-direction: row;
-  margin-top: 3em;
+  margin-top: 3em; /*Applique une marge vers le haut*/
   border: 2px black solid;
   border-radius: 20px;
 }
 
 .section_content{
-  height: 100%;
-  width: 60%;
+  height: 100%; /*Définie la hauteur*/
+  width: 60%; /*Définie la largeur*/
   display: flex;
   flex-direction: column;
 }
 
 .section_content_title{
-  height: 30%;
-  width: 100%;
+  height: 30%; /*Définie la hauteur*/
+  width: 100%; /*Définie la largeur*/
 }
 
 .section_content_text{
-  height: 70%;
-  width: 100%;
+  height: 70%; /*Définie la hauteur*/
+  width: 100%; /*Définie la largeur*/
 }
 
 .section_video{
-  height: 100%;
-  width: 40%;
+  height: 100%; /*Définie la hauteur*/
+  width: 40%; /*Définie la largeur*/
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .section_video video{
-  height: 25em;
-  width: 25em;
+  height: 25em; /*Définie la hauteur*/
+  width: 25em; /*Définie la largeur*/
 }
 
 .ileps-web{
-  margin-top: 1.5em;
+  margin-top: 1.5em; /*Applique une marge vers le haut*/
 }
 
 .ileps-link{
-  color: black;
+  color: black; /*Couleur du texte*/
 }
 
 /*FOOTER*/
 
 footer{
-  height: 20%;
-  width: 100%;
-  background: black;
-  color: white;
+  height: 20%; /*Définie la hauteur*/
+  width: 100%; /*Définie la largeur*/
+  background: black; /*Couleur du fond*/
+  color: white; /*Couleur du texte*/
   display: flex;
   align-items: center;
 }
 
 .footercontainer{
-  height: 80%;
-  width: 100%;
+  height: 80%; /*Définie la hauteur*/
+  width: 100%; /*Définie la largeur*/
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 .logoileps{
-  margin-left: 40px;
+  margin-left: 40px; /*Applique une marge vers la gauche*/
 }
 
 .logoileps img{
-  height: 10%;
-  width: 10%;
+  height: 10%; /*Définie la hauteur*/
+  width: 10%; /*Définie la largeur*/
 }
 
 .legalmention{
-  width: 100%;
+  width: 100%; /*Définie la largeur*/
 }
