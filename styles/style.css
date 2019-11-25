@@ -91,6 +91,8 @@ main h1{
   height: 20%;
   width: 100%;
   background: red;
+  border: 2px black solid;
+  border-radius: 20px;
 }
 
 /*Section1*/
@@ -102,6 +104,8 @@ main h1{
   display: flex;
   flex-direction: row;
   margin-top: 3em;
+  border: 2px black solid;
+  border-radius: 20px;
 }
 
 .section_content{
