@@ -1,29 +1,38 @@
 /*CSS : Cascading style sheets, sert a placer, styliser et même animer des élements du HTML*/
 
+/* ! Guide des unités !
+
+px: pixel (par pixel de l'ecran, pas adapté pour chaque taille d'ecran du coup)
+vh: visual height (1vh=1% de la taille de l'ecan en hauteur, utile pour les différentes tailles d'ecran, car du coup, s'adapte a la taille de l'ecran)
+vw: visual width (pareil pour la largeur)
+em: l'unité em se rapporte à la taille de la police. Avec elle on peut affecter une mesure relative à la taille de police de l'élément parent (au dessus quoi). Elle permet d'avoir des feuilles de style plus facilement adaptables d'un média à un autre
+%: En pourcentage de l'élement parent, (exemple : de base 100%, celui du dessous 80%, celui d'encore en dessous 80%, c'est 80% des 80% qui etait prit des 100%).
+*/
+
      /*GENERAL SETUP (Tout ce qui concerne toute la page ou alors des Setups de bases)*/
 
 /*Font face: Pour intégrer les polices (les importes mais ne les appliques pas encore)*/
 @font-face {
-  font-family: 'Trattatello';
-  src: url('../fonts/Trattatello.ttf');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Trattatello'; /*Le nom utiliser pour le récupérer plus tard*/
+  src: url('../fonts/Trattatello.ttf'); /*Va chercher la source*/
+  font-weight: normal; /*Indique la graisse du texte, ici normale*/
+  font-style: normal; /*Indique l'inclinaison du texte (italique, oblique ect), ici normale*/
 }
 
 @font-face {
-  font-family: 'Calibri';
-  src: url('../fonts/Calibri Regular.ttf');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Calibri'; /*Le nom utiliser pour le récupérer plus tard*/
+  src: url('../fonts/Calibri Regular.ttf'); /*Va chercher la source*/
+  font-weight: normal; /*Indique la graisse du texte, ici normale*/
+  font-style: normal; /*Indique l'inclinaison du texte (italique, oblique ect), ici normale*/
 }
 
 html body{  /*Remet a 0 tout ce que le navigateur peut appliquer de base comme des marges qui pollue le rendu ect (on applique sur le body et sur le html)*/
-  margin: 0;
-  padding: 0;
+  margin: 0; /*Marge extérieure*/
+  padding: 0; /*Marge intérieure*/
 }
 
 body{
-  height: 100vh;
+  height: 100vh; /*Définie la hauteur ici met une unité de base pour pouvoir s'appuyer dessus avec des pourcentages durant tout le développement*/
 }
 
 a{ /*Sur tout les liens*/
@@ -42,30 +51,30 @@ h3{
   text-align: center; /*Centre le texte*/
 }
 
-h3, h1{
+h3, h1{ /*Sur les balises h1 et h3*/
   color: #2A3D67; /*Couleur du texte*/
   font-family: 'Trattatello', sans-serif; /*Applique la police (sur les liens du coup)*/
 }
 
-p{
+p{ /*Sur les balises paragraphe*/
   font-size: 1em; /*Change la taille du texte*/
   font-family: 'Calibri', sans-serif; /*Applique la police (sur les liens du coup)*/
   margin: 1.5em; /*Applique une marge*/
 }
 
-/*HEADER*/
+     /*HEADER*/
 
 header{
   background: black; /*Couleur du fond*/
   color: white; /*Couleur du texte*/
 }
 
-.headercontainer{
+.headercontainer{ /* quand on met un "." c'est qu'on séléctionne une classe dans le HTML, c'est pour cela qu'on met des class="" avec des noms logiques (en anglais toujours), cela permet de séléctionner ce qu'on modifie facilement*/
   height: 10vh; /*Définie la hauteur*/
   width: 100%; /*Définie la largeur*/
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: flex; /*Définie la méthode de placement*/
+  justify-content: space-around; /*Définie le placement horizontal*/
+  align-items: center; /*Définie le placement vertical*/
 }
 
 .logo_jt{
@@ -74,24 +83,24 @@ header{
 
 .menu{
   width: 40%; /*Définie la largeur*/
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: flex; /*Définie la méthode de placement*/
+  justify-content: space-around; /*Définie le placement horizontal*/
+  align-items: center; /*Définie le placement vertical*/
   font-size: 3vh; /*Change la taille du texte*/
 }
 
 .recherche_bar{
-  width: 15%;
+  width: 15%; /*Définie la largeur*/
 }
 
 .bar{
-  border: 2px grey solid;
-  border-radius: 10px;
-  padding: 1vh;
+  border: 2px grey solid; /*Définie une bordure (la taille(pixel), la couleur, et le type (continue, pointillé ect))*/
+  border-radius: 10px; /*Définie la rondeur de la bordure*/
+  padding: 1vh; /*Définie la marge intérieure*/
 }
 
-.bar:focus{
-  outline: none;
+.bar:focus{ /*Sélectionne la classe "bar" met uniquement quand on met la souris dessus (d'ou le ":focus")*/
+  outline: none; /*Enleve le surlignement bleu naturel de quand on survole un lien ou quand on clique dessus (parce que c'est moche)*/
 }
 
 .socialmedia{
@@ -99,33 +108,33 @@ header{
   width: 15%; /*Définie la largeur*/
 }
 
-.socialmedia img{
+.socialmedia img{ /*Sélectionne les images qui sont dans la div qui a la classe "socialmedia"*/
   width: 3vw; /*Définie la largeur*/
 }
 
-/*MAIN*/
+     /*MAIN*/
 
 main{
   height: 80em; /*Définie la hauteur*/
   width: 100%; /*Définie la largeur*/
   background: #CBC5C4; /*Couleur du fond*/
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: flex; /*Définie la méthode de placement*/
+  justify-content: space-around; /*Définie le placement horizontal*/
+  align-items: center; /*Définie le placement vertical*/
   padding-bottom: 3em;
 }
 
-main h1{
-  text-align: center;
+main h1{ /*Sélectionne les h1 qui sont dans le main*/
+  text-align: center; /*Centre le texte*/
 }
 
 .maincontainer{
   height: 105%; /*Définie la hauteur*/
   width: 70%; /*Définie la largeur*/
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  display: flex; /*Définie la méthode de placement*/
+  flex-direction: column; /*Définie le sens de placement des éléments (de base en horizontal, gauche a droite) ici column = de haut en bas*/
+  justify-content: space-between; /*Définie le placement horizontal*/
+  align-items: center; /*Définie le placement vertical*/
 }
 
 .presentation{
@@ -140,8 +149,8 @@ main h1{
 .section{
   height: 80%; /*Définie la hauteur*/
   width: 100%; /*Définie la largeur*/
-  display: flex;
-  flex-direction: row;
+  display: flex; /*Définie la méthode de placement*/
+  flex-direction: row; /*Définie le sens de placement des éléments (de base en horizontal, gauche a droite) ici row = de gauche a droite parce que déja modifier avant*/
   margin-top: 3em; /*Applique une marge vers le haut*/
   border: 2px black solid;
   border-radius: 20px;
@@ -150,8 +159,8 @@ main h1{
 .section_content{
   height: 100%; /*Définie la hauteur*/
   width: 60%; /*Définie la largeur*/
-  display: flex;
-  flex-direction: column;
+  display: flex; /*Définie la méthode de placement*/
+  flex-direction: column; /*Définie le sens de placement des éléments (de base en horizontal, gauche a droite) ici column = de haut en bas*/
 }
 
 .section_content_title{
@@ -167,12 +176,12 @@ main h1{
 .section_video{
   height: 100%; /*Définie la hauteur*/
   width: 40%; /*Définie la largeur*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; /*Définie la méthode de placement*/
+  justify-content: center; /*Définie le placement horizontal*/
+  align-items: center; /*Définie le placement vertical*/
 }
 
-.section_video video{
+.section_video video{ /*Sélectionne les vidéos qui sont dans la div qui a la classe "section_video"*/
   height: 25em; /*Définie la hauteur*/
   width: 25em; /*Définie la largeur*/
 }
@@ -185,30 +194,30 @@ main h1{
   color: black; /*Couleur du texte*/
 }
 
-/*FOOTER*/
+     /*FOOTER*/
 
 footer{
   height: 20%; /*Définie la hauteur*/
   width: 100%; /*Définie la largeur*/
   background: black; /*Couleur du fond*/
   color: white; /*Couleur du texte*/
-  display: flex;
-  align-items: center;
+  display: flex; /*Définie la méthode de placement*/
+  align-items: center; /*Définie le placement vertical*/
 }
 
 .footercontainer{
   height: 80%; /*Définie la hauteur*/
   width: 100%; /*Définie la largeur*/
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: flex; /*Définie la méthode de placement*/
+  flex-direction: row; /*Définie le sens de placement des éléments (de base en horizontal, gauche a droite) ici row = de gauche a droite parce que déja modifier avant*/
+  align-items: center; /*Définie le placement vertical*/
 }
 
 .logoileps{
   margin-left: 40px; /*Applique une marge vers la gauche*/
 }
 
-.logoileps img{
+.logoileps img{ /*Sélectionne les images qui sont dans la div qui a la classe "logoileps"*/
   height: 10%; /*Définie la hauteur*/
   width: 10%; /*Définie la largeur*/
 }
